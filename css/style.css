@@ -77,6 +77,38 @@ nav #icon {
   font-size: 30px;
   line-height: 50%;
   cursor: pointer;
-  margin-right: 50px;
+  display: none;
+}
+
+@media (max-width: 908px) {
+  nav #icon {
+    display: block;
+  }
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    top: 70px;
+    left: -100%;
+    text-align: center;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+  }
+  nav ul li {
+    display: block;
+    padding: 30px 50px;
+    margin: 30px 0;
+  }
+  nav ul a {
+    font-size: 16px;
+  }
+  nav ul a.active, nav ul a:hover {
+    border: none;
+    color: #05F6DA;
+  }
+  nav ul ul.show {
+    left: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
