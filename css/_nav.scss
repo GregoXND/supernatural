@@ -2,9 +2,9 @@ nav{
     color: var(--esencialOne-color);
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background: var(--esencialTwo-color);
-    padding: 20px 50px;
+    padding: 10px;
     flex-wrap: wrap;
 }
 
@@ -19,7 +19,7 @@ nav ul{
             transition: 0.2s;
             border: 1px solid transparent;
             border-radius: 3px;
-            padding: 15px;
+            padding: 10px;
         }
     }
 }
@@ -37,7 +37,7 @@ a.active, a:hover{
     transition: .5s;
 }
 
-nav #icon{
+nav .icono{
     color: white;
     font-size: 30px;
     line-height: 50%;
@@ -47,9 +47,10 @@ nav #icon{
 
 @media (max-width: 908px)
  {
-    nav #icon{
+    nav .icono{
         display: block;
     }
+    
     nav ul{
         position: fixed;
         width: 100%;
