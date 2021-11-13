@@ -6,8 +6,8 @@ nav {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background: var(--esencialTwo-color);
-  padding: 10px;
+  background: #00000091;
+  padding: 5px 15px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -18,7 +18,7 @@ nav ul {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 10px 0;
+  padding: 5px;
 }
 
 nav ul li {
@@ -35,9 +35,8 @@ nav ul li a {
 }
 
 .logo {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
-  line-height: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -113,5 +112,64 @@ nav .icono {
 
 .container-header {
   background-image: url(../img/e.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.container-present {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  padding: 100px 10px;
+}
+
+.details-bottom {
+  border-bottom: 2px solid var(--esencialOne-color);
+  width: 30%;
+  padding: 5px;
+}
+
+.present-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 60px;
+  color: var(--esencialOne-color);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.botto-read {
+  color: var(--esencialOne-color);
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-size: 20px;
+  border: transparent;
+}
+
+.botto-read:hover {
+  border: 2px solid var(--esencialOne-color);
+  padding: 10px 30px;
+  color: var(--primary-color);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.present-video {
+  border-radius: 20px;
 }
 /*# sourceMappingURL=style.css.map */
